@@ -7,12 +7,16 @@ randomfn="/tmp/post-content-$RANDOM"
 nano $randomfn
 rsspostcontent=$(cat $randomfn)
 
+echo A1
 rsspostdate=$(date -R)
+echo A2
 postfinal=$(echo "${posttemplate/post-title/$rssposttitle}")
+echo A3
 postfinal=$(echo "${postfinal/post-author/$rsspostauthor}")
+echo A4
 postfinal=$(echo "${postfinal/post-content/$rsspostcontent}")
+echo A5
 postfinal=$(echo "${postfinal/post-date/$rsspostdate}")
-
 
 oldcontent=$(cat $fname)
 echo "${oldcontent/'</channel>'/$postfinal}" > $fname
