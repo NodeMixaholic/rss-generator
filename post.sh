@@ -15,7 +15,7 @@ postfinal=$(echo "${postfinal/post-date/$rsspostdate}")
 
 
 oldcontent=$(cat $fname)
-echo "${oldcontent/'</rss>'/$postfinal}" > $fname
+echo "${oldcontent/'</channel>'/$postfinal}" > $fname
 
 echo Done.
 echo Note that to use this post script in the future, you must specify a filename
