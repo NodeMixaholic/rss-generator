@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>rss-channel-title</title>
+        <link>rss-mainpage</link>
+        <description>rss-channel-description</description>
+        <language>rss-channel-lang</language>
+    </channel>
+</rss>
