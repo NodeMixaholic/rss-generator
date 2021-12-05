@@ -2,5 +2,6 @@
         <title>post-title</title>
         <author>post-author</author>
         <description>post-content</description>
+        <pubDate>post-date</pubDate>
     </item>
 </rss>
